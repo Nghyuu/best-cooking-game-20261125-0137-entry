@@ -1,0 +1,47 @@
+/* Rush Hour Kitchen — style.css
+   The page around the canvas: a dark warm backdrop that frames the game,
+   a centred stage, and a one-line control hint. The game itself is drawn
+   entirely on the canvas in render.js. */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #1c130c;
+  color: #fff6e5;
+  font-family: Trebuchet MS, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#stage {
+  text-align: center;
+  padding: 12px;
+}
+
+#game {
+  display: block;
+  width: min(1280px, 96vw);
+  height: auto;
+  border: 4px solid #6b4423;
+  border-radius: 10px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+  background: #c98f4e;
+  cursor: pointer;
+}
+
+#hint {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #d9b380;
+  letter-spacing: 0.02em;
+}
